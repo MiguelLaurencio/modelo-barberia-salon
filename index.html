@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Modelo de página para barbería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="demo">Modelo de demostración · ver versión:
+  <button id="b1" class="on">Barbería</button><button id="b2">Salón</button>
+</div>
+
+<div class="w">
+<div class="hero">
+  <small id="kick"></small>
+  <h1 id="name"></h1>
+  <p class="lead" id="tag"></p>
+  <a class="btn" href="#reserva">Reservar mi cita</a>
+</div>
+
+<section><h2>Servicios y precios</h2><div id="srv"></div></section>
+<section><h2>Nuestro trabajo</h2><div class="gal" id="gal"></div>
+  <p style="color:var(--mu);font-size:.9rem">Aquí van las fotos reales de tus trabajos.</p></section>
+
+<section class="two">
+  <div class="box"><h2>Horario</h2><div id="hrs"></div></div>
+  <div class="box"><h2>Dónde estamos</h2><p id="adr"></p><a class="btn" id="map" target="_blank" rel="noopener" style="margin-top:6px">Cómo llegar</a></div>
+</section>
+
+<section id="reserva"><div class="box" style="max-width:520px;margin:0 auto">
+  <h2>Reserva tu cita</h2>
+  <label for="n">Tu nombre</label><input id="n">
+  <label for="s">Servicio</label><select id="s"></select>
+  <label for="d">Día</label><input id="d" type="date">
+  <label for="h">Hora</label>
+  <select id="h"><option>9:00 a. m.</option><option>10:00 a. m.</option><option>11:00 a. m.</option><option>1:00 p. m.</option><option>2:00 p. m.</option><option>3:00 p. m.</option><option>4:00 p. m.</option><option>5:00 p. m.</option></select>
+  <p><button class="btn" id="send" type="button" style="width:100%">Reservar por WhatsApp</button></p>
+</div></section>
+
+<div class="cta">
+  <b>¿Quieres una página así para tu negocio?</b>
+  <p style="color:var(--mu);margin:6px 0 14px">Esto es un modelo. La tuya llevaría tu nombre, tus fotos, tus precios y tu WhatsApp.</p>
+  <a class="btn" id="mine" target="_blank" rel="noopener">Quiero la mía</a>
+</div>
+</div>
+<footer>©Migue · Desarrollo web · Santo Domingo, RD</footer>
+<a class="wa" id="wa" target="_blank" rel="noopener">WhatsApp</a>
+
+<script src="script.js"></script>
+</body>
+</html>
